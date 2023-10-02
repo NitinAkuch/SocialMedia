@@ -92,7 +92,13 @@ const TopbarIconBadge = styled.div`
   justify-content: center;
   font-size: 12px;
 `;
-const ProfilePicture = styled.img``;
+const ProfilePicture = styled.img`
+  height: 32px;
+  width: 32px;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+`;
 
 const Navbar = () => {
   return (
@@ -128,7 +134,10 @@ const Navbar = () => {
             <TopbarIconBadge>1</TopbarIconBadge>
           </TopbarIconItem>
         </TopbarIcons>
-        <ProfilePicture></ProfilePicture>
+        <ProfilePicture
+          src="assets/person/1.jpg"
+          alt="ProfilePicture"
+        ></ProfilePicture>
       </TopbarRight>
     </Container>
   );
