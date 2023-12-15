@@ -13,9 +13,13 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("DATABASE IS CONNECTED!").catch((err) => console.log(err));
-  });
+    console.log("DATABASE IS CONNECTED!");
+  })
+  .catch((err) => console.log(err));
 
-app.listen(8080, () => {
-  console.log("Sever is running on 3000.");
+//middleware
+app.use(express.json());
+
+app.listen(5000, () => {
+  console.log("Sever is running on 5000.");
 });
