@@ -1,12 +1,10 @@
 const express = require("express");
+const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-
-//Routes
-
-const app = express();
+const authRoute = require("./routes/auth");
+const testRoute = require("./routes/test");
 dotenv.config();
-
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
@@ -20,6 +18,9 @@ mongoose
 //middleware
 app.use(express.json());
 
+app.use("/api/auth", authRoute);
+app.use("/api", testRoute);
+
 app.listen(5000, () => {
-  console.log("Sever is running on 5000.");
+  console.log("Server is running on 5000.");
 });
