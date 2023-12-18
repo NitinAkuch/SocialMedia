@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Feed from "../components/Feed";
 import Rightbar from "../components/Rightbar";
+import Login from "./Login";
+import Register from "./Register";
 
 const HomeContainer = styled.div`
   display: flex;
@@ -12,12 +14,14 @@ const HomeContainer = styled.div`
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <HomeContainer>
         <Sidebar />
         <Feed />
         <Rightbar />
-      </HomeContainer>
+      </HomeContainer> */}
+      {/* <Login /> */}
+      <Register />
     </div>
   );
 };
