@@ -106,7 +106,7 @@ const Navbar = () => {
       <TopbarLeft>
         <LogoDiv>
           <Logo>SocialBook</Logo>
-          <Credit> -Developed by Nitin Akuch</Credit>
+          <Credit> - Developed by Nitin Akuch</Credit>
         </LogoDiv>
       </TopbarLeft>
       <TopbarCenter>
