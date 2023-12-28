@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   background-color: #f0f2f5;
   display: flex;
   align-items: center;
@@ -19,6 +19,7 @@ const LoginLeft = styled.div`
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  margin-right: 25px;
 `;
 
 const LoginLogo = styled.h3`
@@ -36,6 +37,7 @@ const LoginRight = styled.div`
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  margin-left: 25px;
 `;
 
 const LoginBox = styled.div`
